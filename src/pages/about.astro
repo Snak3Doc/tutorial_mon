@@ -1,0 +1,66 @@
+---
+const pageTitle = "About Me";
+
+const identity = {
+    firstName: "Snake",
+    lastName: "Doc",
+    nationality: "Australian",
+    occupation: "Programming Instructor",
+    hobbies: ["Programming", "Game Dev", "Mountain Biking"],
+};
+
+const skills = ["Python", "C#", "JS", "HTML", "CSS", "pygame", "PyQt", "Unity"]
+
+const happy = true;
+const finished = false;
+const goal = 14;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+        <style>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: green;
+                font-weight: bold;
+            }
+        </style>
+	</head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+
+        <h1>{pageTitle}</h1>
+        <h2>... and my new Astro site!</h2>
+    
+        <p>I am working through a tutorial on how to make a blog using Astro</p>
+    
+        <p>This site will update as I complete more of the tutorial</p>
+
+        <p>Here are a few facts about me:</p>
+        <ul>
+            <li>My name is {identity.firstName} {identity.lastName}</li>
+            <li>I'm from {identity.nationality} and i work as a {identity.occupation}.</li>
+            {identity.hobbies.length >= 2 &&
+                <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+            }
+        </ul>
+        <p>My skills are:</p>
+        <ul>
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
+        </ul>
+        {happy && <p>I am happy to be learning Astro!</p>}
+        {finished && <p>I finished this tutorial!</p>}
+        {goal === 14 ? <p>My goal is to finish in 14 lessons!</p> : <p>My goal is not 14 lessons.</p>}
+    </body>
+</html>
+
+

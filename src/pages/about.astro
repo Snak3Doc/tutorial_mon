@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const pageTitle = "About Me";
 
 const identity = {
@@ -14,6 +15,10 @@ const skills = ["Python", "C#", "JS", "HTML", "CSS", "pygame", "PyQt", "Unity"]
 const happy = true;
 const finished = false;
 const goal = 14;
+
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 <html lang="en">
 	<head>
@@ -22,14 +27,15 @@ const goal = 14;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <style>
+        <style define:vars={{skillColor, fontWeight, textCase}}>
             h1 {
                 color: purple;
                 font-size: 4rem;
             }
             .skill {
-                color: green;
-                font-weight: bold;
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase);
             }
         </style>
 	</head>

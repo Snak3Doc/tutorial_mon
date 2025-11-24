@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My First Blog Post"
 pubDate: 29-09-2025
 description: "This is the first post on my new blog."
@@ -6,12 +7,8 @@ author: "SnakeDoc"
 image:
     url: "https://docs.astro.build/assets/rose.webp"
     alt: "The Astro logo on a dark background."
-tags: ["Astro", "blog", "frontend", "web"]
+tags: ["astro", "blog", "frontend", "web", "banana"]
 ---
-# My First Blog Post
-
-Published on: 29-09-2025
-
 Welcome to my _new blog_ about lerning Astro! Here i will share my progress building my blog.
 
 ## What I've Accomplished

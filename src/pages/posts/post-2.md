@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My Second Blog Post"
 pubDate: 29-09-2025
 description: "This is the second post on my new blog."
@@ -6,7 +7,7 @@ author: "SnakeDoc"
 image:
     url: "https://docs.astro.build/assets/rose.webp"
     alt: "The Astro logo on a dark background."
-tags: ["Astro", "blog", "frontend", "web"]
+tags: ["astro", "blog", "frontend", "web"]
 ---
 # Lorem Ipsum Is Cool
 

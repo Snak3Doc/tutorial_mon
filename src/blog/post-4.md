@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: "Using the glob() function"
 pubDate: 2025-10-03
 description: "Learning how to use the glob() and map()."
